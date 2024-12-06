@@ -62,7 +62,7 @@ const Notelist = () => {
               <h2>{note.title}</h2>
               <p className="content">{note.content}</p>
               <p><strong>Shared With:</strong> {note.shared_with.map((data) => `'${data.first_name} ${data.last_name}'`).join(", ")}</p>
-              <p><strong>Date:</strong> {new Date(note.date).toISOString().split("T")[0]}</p>
+              <p><strong></strong> {new Date(note.date).toISOString().split("T")[0]}</p>
               <div className="actions">
                 <button onClick={() => openPopUp(note)}>Edit</button>
                 <button onClick={() => deleteNote(note.id)}>Delete</button>
