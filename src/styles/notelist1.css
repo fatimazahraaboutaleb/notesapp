@@ -1,0 +1,144 @@
+.All {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin: 20px;
+}
+h1{
+    margin-right: 10px;
+}
+.addnote {
+    position: absolute;
+    top: 50px;
+    right: 170px;
+    background-color: #415A77;
+    color: #E0E1DD;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addnote:hover {
+    background-color: #778DA9;
+}
+.note-card {
+    background: linear-gradient(145deg, #1E2A39, #0D1B2A);
+    color: #E0E1DD;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.note-card h2 {
+    font-size: 1.4rem;
+    color: #F5F6FA;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #415A77;
+    padding-bottom: 4px;
+}
+
+.note-card .content {
+    color: #F5F6FA;
+}
+.note-card p {
+    font-size: 0.9rem;
+    margin: 4px 0;
+    color: #AABACB;
+    line-height: 1.4;
+}
+
+.note-card .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.note-card .actions button {
+    background-color: #415A77;
+    color: #E0E1DD;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.note-card .actions button:hover {
+    background-color: #778DA9;
+}
+
+.notelist .create-form {
+    background: linear-gradient(145deg, #0D1B2A, #1B263B);
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #E0E1DD;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.create-form input {
+    font-weight: 300;
+    font-size: 0.9rem;
+    width: 220px;
+    height: 36px;
+    margin-bottom: 12px;
+    background-color: #778DA9;
+    border: 1px solid #415A77;
+    color: #0D1B2A;
+    border-radius: 8px;
+    padding-left: 10px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-form input:focus {
+    background-color: #E0E1DD;
+    color: #0D1B2A;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.create-form input::placeholder {
+    color: #E0E1DD;
+    font-style: italic;
+}
+
+.create-form button {
+    font-size: 0.9rem;
+    background-color: #D3CAB9;
+    color: #0D1B2A;
+    margin: 12px;
+    padding: 8px 80px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-form button:hover {
+    background-color: #0D1B2A;
+    color: white;
+    border: 1px solid #415A77;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

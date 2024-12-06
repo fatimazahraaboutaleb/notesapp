@@ -1,0 +1,110 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-section {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+}
+
+.profile-section h1 {
+    color: #415A77;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.profile-section img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #778DA9;
+    margin-bottom: 15px;
+}
+
+.profile-section p {
+    font-size: 16px;
+    color: #0D1B2A;
+    margin: 5px 0;
+}
+
+.password-section {
+    background-color: #1B263B;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 2;
+    min-width: 280px;
+}
+
+.password-section h3 {
+    color: #E0E1DD;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.password-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #E0E1DD;
+    font-size: 14px;
+}
+
+.password-section input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #415A77;
+    border-radius: 5px;
+    background-color: #0D1B2A;
+    color: #E0E1DD;
+    font-size: 14px;
+}
+
+.password-section button {
+    width: 85%;
+    padding: 10px 12px;
+    background-color: #d3cab9;
+    color: #0D1B2A;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.password-section button:hover {
+    background-color: #415A77;
+    color: white;
+    border: 1px solid #d3cab9;
+}
+
+.password-section button:focus {
+    outline: 3px solid #E0E1DD;
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-section, .password-section {
+        flex: none;
+        width: 80%;
+    }
+}

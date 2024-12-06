@@ -1,0 +1,102 @@
+.All{
+    display: flex;
+}
+.note-card {
+    background-color: #0D1B2A;
+    color: #E0E1DD;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .note-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .note-card h2 {
+    font-size: 1.6rem;
+    color: #E0E1DD;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #415A77;
+    padding-bottom: 4px;
+  }
+  
+  .note-card p {
+    font-size: 1rem;
+    margin: 8px 0;
+    color: #778DA9;
+  }
+  
+  .note-card .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+  }
+  
+  .note-card .actions button {
+    background-color: #415A77;
+    color: #E0E1DD;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .note-card .actions button:hover {
+    background-color: #778DA9;
+  }
+  
+.notelist .create-form{
+    background-color: #1B263B;
+    height: 300px;
+    margin:70px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+    input{
+        font-weight: 300;
+        font-size: medium;
+        width: 250px;
+        height: 38px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        background-color: #778DA9;
+        border: 1px solid #415A77;
+        color: #0D1B2A;
+        border-radius: 10px;
+        margin-left:20px;
+        margin-right: 20px;
+        padding-left: 10px;
+    }
+    input::placeholder{
+        color:white;
+    }
+    button{
+        font-size: medium;
+        background-color: #d3cab9;
+        color: #0D1B2A;
+        margin: 15px;
+        padding: 12px 90px;
+        border: none;
+        border-radius: 10px;
+    }
+    button:hover{
+        background-color: #0D1B2A;
+        color: white;
+        border: 1px solid #415A77;
+    }
+}

@@ -2,37 +2,38 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  margin-left: 100px;
+  margin-top: 60px; /* Adjust this value to match your navbar's height */
+  padding: 20px; /* Optional, to give some spacing around the content */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.navbar {
+  position: fixed; /* Keep the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 8%; /* Full width */
+  height: 100vh; /* Adjust height as needed */
+  background-color: #ffffff; /* Dark background */
+  color: rgb(37, 37, 37); /* Text color */
+  display: flex; /* Flexbox for layout */
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 5px; /* Horizontal padding */
+  z-index: 1000; /* Ensure it’s above other elements */
 }
-
-.App-link {
-  color: #61dafb;
+.navbar Link{
+  text-decoration: none;
+  color: inherit;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .first-part{
+  display: flex; /* Flexbox for layout */
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+}
+.navbar .last-part{
+  display: flex; /* Flexbox for layout */
+  flex-direction: column;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
 }
